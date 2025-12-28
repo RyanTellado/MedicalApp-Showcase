@@ -5,7 +5,7 @@
 ![Role](https://img.shields.io/badge/Role-Project%20Lead-green)
 
 ## 📌 Project Overview
-This platform serves as the digital backbone for humanitarian organizations (Parivaar, SuDRO) operating mobile hospitals. Much like **Epic or MyChart** in the U.S., this system provides a comprehensive "Patient Portal" for clinicians, transforming millions of paper-based tally marks into a searchable, longitudinal medical record.
+This platform serves as the digital backbone for humanitarian organizations (Parivaar, Samaritain Help Mission, SuDRO Sudan) operating mobile hospitals. Much like **Epic or MyChart** in the U.S., this system provides a comprehensive "Patient Portal" for clinicians and "Admin Portal" for administrative staff, replacing their paper-based system which used tally marks into a searchable, longitudinal medical record.
 
 * **Scale:** Replacing paper records for 500,000+ patients annually across 17+ districts.
 * **Mission:** Bridging the digital literacy gap for field staff while ensuring data integrity in "dead zones" without internet.
