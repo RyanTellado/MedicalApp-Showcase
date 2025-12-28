@@ -15,18 +15,20 @@ This platform serves as the digital backbone for humanitarian organizations (Par
 ## 📱 Product Showcase
 
 ### 1. Clinical Assessment & History
-Much like a professional EMR (Electronic Medical Record), the system retrieves a patient's entire medical narrative using unique IDs. Doctors can instantly view historical trends in weight, blood pressure, and blood sugar to ensure continuity of care.
+This system provides a comprehensive EMR (Electronic Medical Record) interface, retrieving a patient's medical narrative using unique IDs. Doctors can instantly view historical trends to ensure continuity of care.
 
 | Longitudinal History (Demo Data) | Clinical Assessment Entry |
-| :--- | :--- |
-| ![History](./visit-history-ui-2.png) | ![Assessment](./Screenshot_20251226_213334.png) |
+| :---: | :---: |
+| <img src="./visit-history-ui-2.png" width="350"> | <img src="./Screenshot_20251226_213334.png" width="350"> |
+| **Real-time Vitals:** Pulls historical trends (Weight, BP, Sugar). | **Data Entry:** Optimized for field staff with limited digital literacy. |
 
 ### 2. Administrative & Supply Chain Logic
-The administrative side of the app handles the "Economics" of humanitarian aid. It provides real-time visibility into medicine stock levels and automates logistics for mobile ambulance crews.
+[cite_start]The administrative side handles the economics of humanitarian aid, providing visibility into medicine stock and automating logistics for mobile ambulance crews[cite: 12, 13].
 
 | Inventory Management | Admin Navigation |
-| :--- | :--- |
-| ![Inventory](./medicine-inventory-ui.png) | ![Admin](./admin-navigation-page.png) |
+| :---: | :---: |
+| <img src="./medicine-inventory-ui.png" width="350"> | <img src="./admin-navigation-page.png" width="350"> |
+| **Smart Inventory:** Real-time tracking of life-saving stock levels. | **Admin Portal:** Centralized control for districts and clinics. |
 
 ---
 
