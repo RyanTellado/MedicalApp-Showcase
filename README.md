@@ -12,36 +12,40 @@ This platform serves as the digital backbone for humanitarian organizations (Par
 
 ---
 
-## 📱 The Interface in Action
-| Longitudinal Patient History | Administrative & Staff Automation |
+## 📱 Product Showcase
+
+### 1. Clinical Assessment & History
+Much like a professional EMR (Electronic Medical Record), the system retrieves a patient's entire medical narrative using unique IDs. Doctors can instantly view historical trends in weight, blood pressure, and blood sugar to ensure continuity of care.
+
+| Longitudinal History (Demo Data) | Clinical Assessment Entry |
 | :--- | :--- |
-| ![Assessment](./visit-history-ui.png) | *[Insert Workflow GIF Here]* |
-| **Real-time Vitals:** Pulls historical trends (Weight, BP, Sugar) to ensure continuity of care. | **"Invisible" Logic:** Auto-logs staff hours and inventory based on mobile clinic activity. |
+| ![History](./visit-history-ui-2.png) | ![Assessment](./Screenshot_20251226_213334.png) |
+
+### 2. Administrative & Supply Chain Logic
+The administrative side of the app handles the "Economics" of humanitarian aid. It provides real-time visibility into medicine stock levels and automates logistics for mobile ambulance crews.
+
+| Inventory Management | Admin Navigation |
+| :--- | :--- |
+| ![Inventory](./medicine-inventory-ui.png) | ![Admin](./admin-navigation-page.png) |
 
 ---
 
 ## 🚀 Key Technical Innovations
 
-### 1. Longitudinal Care Engine
-Unlike paper records that only capture a single visit, this Java-based engine uses Aadhar (ID) numbers to pull a patient's entire medical narrative. It alerts doctors to historical trends in weight and blood sugar, preventing critical oversights in rural treatment.
-
-### 2. "Invisible" Workflow Automation
-To accommodate users with limited digital literacy, I developed custom automation to handle administrative overhead silently:
-* **Attendance Intelligence:** Automatically clocks staff in/out and assigns them to specific mobile clinics based on the first and last patient entries of the day.
-* **Smart Inventory Management:** Real-time medicine tracking that deducts stock levels (e.g., ITRIM 200, Almox-500) automatically as treatments are recorded.
-
-### 3. Resilient Data Architecture
-Designed for the most remote areas of South Sudan and India, the app uses an offline-first architecture. All medical data persists locally using Java logic and automatically synchronizes with **Firebase Cloud Firestore** the moment connectivity is restored.
+* **Automated Workflow Logic:** Developed Java-based automation that handles staff clock-ins and location assignments based on the first and last patient interactions of the day.
+* **Smart Inventory Intelligence:** Stock levels for life-saving medicines (e.g., Cipro-500, Amoxipen) are deducted in real-time as treatments are recorded, triggering "Low Stock" alerts for administrators.
+* **Resilient Architecture:** Implemented an offline-first data persistence model. Data is stored locally and automatically synchronized with **Firebase Cloud Firestore** the moment the mobile clinic returns to a 3G/4G coverage area.
+* **Administrative Analytics:** Custom data transformation layer that exports complex NoSQL database structures into organized Google Sheets for high-level organizational analysis.
 
 ---
 
-## 🛠️ Technical Profile
+## 🛠️ Technical Stack
 * **Frontend:** Android Studio (Java)
 * **Backend & Database:** Firebase Cloud Firestore
-* **Analytics:** Automated data transformation for export into Google Sheets for high-level organizational analysis.
+* **Impact Areas:** Rural India (Parivaar) and South Sudan (SuDRO)
 
 <details>
 <summary><b>📖 Read the Project Backstory (The "Why")</b></summary>
 
-When I first connected with Parivaar, I found that each "tally mark" on paper was a person reduced by the limits of physical records. As a freshman at Stanford, I taught myself Android Studio to build a solution that preserves patient dignity and ensures life-saving longitudinal care.
+When I first connected with Parivaar, I found that each "tally mark" on paper was a person reduced by the limits of physical records. As a freshman at Stanford, I taught myself Android Studio to build a digital solution that preserves patient dignity and ensures life-saving longitudinal care.
 </details>
