@@ -1,31 +1,37 @@
 # Humanitarian Medical Informatics System
-### Scaling Healthcare for 500k+ Patients via Mobile Automation
+### Digitizing Healthcare for 500,000+ Patients in Rural India & South Sudan
 
 ![Impact](https://img.shields.io/badge/Impact-500k%2B%20Patients-blue)
 ![Role](https://img.shields.io/badge/Role-Project%20Lead-green)
 
----
-
-## 📱 Product Showcase
-| Patient Assessment & History | Automated Clinic Management |
+## 📱 The Interface in Action
+| Patient Assessment & History | Administrative Data Export |
 | :--- | :--- |
-| ![Assessment](app-screenshot.png) | *[Insert your GIF/Video here]* |
-| **Real-time Vitals & History:** Pulls longitudinal data to prevent treatment oversights. | **Invisible Automation:** Auto-logs staff hours and inventory based on usage. |
+| ![Assessment](./assets/assessment_ui.png) | ![Video Demo](./assets/demo_walkthrough.gif) |
+*Captions: (Left) Comprehensive patient logging. (Right) Real-time data sync for admin analysis.*
 
 ---
 
-## 🚀 Key Innovation: Solving the Literacy Gap
-[cite_start]As a freshman at Stanford[cite: 1, 3], I developed this system to replace millions of paper tally marks with a digital infrastructure designed for users with limited digital literacy.
+## 🎯 The Mission
+[cite_start]I led a team of 30+ to replace paper-based record-keeping (millions of tally marks) with a digital infrastructure for mobile hospitals[cite: 12, 13].
 
-### ⚙️ Custom Automation Features
-* **Intelligent Clock-In:** Developed Java logic that automatically assigns staff to clinics and logs work hours based on the first and last patient entries of the day.
-* **Smart Inventory:** Custom medicine tracking that deducts stock (e.g., ITRIM 200, Almox-500) in real-time as treatments are recorded.
-* **History Retrieval:** Uses patient IDs to instantly display weight, BP, and blood sugar trends from previous visits.
-* **Data Export:** Automated transformation of NoSQL data into structured sheets for humanitarian leadership analysis.
+<details>
+<summary><b>Click to read the full story (The "Why")</b></summary>
+When I first connected with Parivaar, I found that each "tally mark" was a person reduced by the limits of paper. [cite_start]I taught myself Android Studio to build a solution that preserves patient dignity and ensures long-term care[cite: 14].
+</details>
 
 ---
 
-## 🛠️ Technical Profile
-* **Platform:** Android Studio (Java)
-* **Backend:** Firebase Cloud Firestore (Offline-first architecture)
-* [cite_start]**Impact:** 17+ districts across India and South Sudan[cite: 12].
+## ⚙️ How it Works
+* [cite_start]**Longitudinal Care:** Uses IDs to pull historical symptoms, weight, and blood sugar trends to prevent medical oversights[cite: 12].
+* **Staff Automation:** System automatically handles clock-ins and location assignments for doctors and drivers based on mobile clinic activity.
+* **Inventory Tracking:** Real-time stock levels update as medicines (e.g., ITRIM 200, Almox-500) are prescribed.
+* [cite_start]**Resilient Sync:** Built for remote areas; data persists locally and syncs to Firebase Cloud Firestore when connectivity is restored[cite: 12].
+
+---
+
+## 🛠️ Technical Overview
+* [cite_start]**Language:** Java [cite: 39]
+* [cite_start]**Platform:** Android Studio [cite: 14]
+* **Database:** Firebase Cloud Firestore
+* **Integrations:** Automated exports to Google Sheets for humanitarian leadership analysis.
