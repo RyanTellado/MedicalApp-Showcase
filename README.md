@@ -38,7 +38,7 @@ This section demonstrates the core "invisible" automation. As the clinician ente
 
 | Real-Time Database Synchronization |
 | :---: |
-| <img src="./patient-diagnosis-medicine-calculation-ezgif.com-speed.gif" width="700"> |
+| <img src="./patient-diagnosis-medicine-calculation.gif" width="700"> |
 | **Split-Screen Demo:** Watch the Firebase Console (Right) update medicine quantities (e.g., *Amycordial*) the moment the assessment form (Left) is processed. |
 
 ---
