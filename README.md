@@ -12,23 +12,23 @@ This platform serves as the digital backbone for humanitarian organizations (Par
 
 ---
 
-## 📱 Product Showcase
+## 📱 Interactive Product Showcase
 
-### 1. Clinical Assessment & History
-This system provides a comprehensive EMR (Electronic Medical Record) interface, retrieving a patient's medical narrative using unique IDs. Doctors can instantly view historical trends to ensure continuity of care.
+### 1. Clinical Assessment & History Engine
+The system retrieves a patient's entire medical narrative using unique Aadhaar IDs. Doctors can instantly view historical trends in weight, blood pressure, and blood sugar to ensure continuity of care across different mobile clinic visits.
 
-| Longitudinal History (Demo Data) | Clinical Assessment Entry |
+| Interactive ID Search & History Retrieval | Clinical Assessment Entry |
 | :---: | :---: |
-| <img src="./visit-history-ui-2.png" width="350"> | <img src="./Screenshot_20251226_213334.png" width="350"> |
-| **Real-time Vitals:** Pulls historical trends (Weight, BP, Sugar). | **Data Entry:** Optimized for field staff with limited digital literacy. |
+| <img src="./id-entering-patient-history-ezgif.com-optimize.gif" width="350"> | <img src="./visit-history-ui-2.png" width="350"> |
+| **Real-time Retrieval:** Instant NoSQL query pulling longitudinal vitals. | **Longitudinal View:** Demo data (John Doe) showing visit history trends. |
 
 ### 2. Administrative & Supply Chain Logic
-[cite_start]The administrative side handles the economics of humanitarian aid, providing visibility into medicine stock and automating logistics for mobile ambulance crews[cite: 12, 13].
+The administrative side handles the "Economics" of humanitarian aid, providing visibility into medicine stock and automating logistics for mobile ambulance crews.
 
-| Inventory Management | Admin Navigation |
+| Smart Inventory Management | Admin Navigation & Control |
 | :---: | :---: |
 | <img src="./medicine-inventory-ui.png" width="350"> | <img src="./admin-navigation-page.png" width="350"> |
-| **Smart Inventory:** Real-time tracking of life-saving stock levels. | **Admin Portal:** Centralized control for districts and clinics. |
+| **Inventory Intelligence:** Real-time tracking of life-saving stock levels. | **Admin Portal:** Centralized management for districts and clinics. |
 
 ---
 
