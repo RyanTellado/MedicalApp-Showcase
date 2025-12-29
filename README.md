@@ -22,7 +22,28 @@ The system retrieves a patient's entire medical narrative using unique Aadhaar I
 | <img src="./id-entering-patient-history-ezgif.com-optimize.gif" width="350"> | <img src="./visit-history-ui-2.png" width="350"> |
 | **Real-time Retrieval:** Instant NoSQL query pulling longitudinal vitals. | **Longitudinal View:** Demo data (John Doe) showing visit history trends. |
 
-### 2. Administrative & Supply Chain Logic
+## 📱 Interactive Product Showcase
+
+### 1. Clinical Assessment & History Engine
+The system retrieves a patient's entire medical narrative using unique Aadhaar IDs. Doctors can instantly view historical trends in weight, blood pressure, and blood sugar to ensure continuity of care across different mobile clinic visits.
+
+| Interactive ID Search & History Retrieval | Longitudinal Medical View |
+| :---: | :---: |
+| <img src="./id-entering-patient-history-ezgif.com-optimize.gif" width="350"> | <img src="./visit-history-ui-2.png" width="350"> |
+| **Real-time Retrieval:** Instant NoSQL query pulling longitudinal vitals. | **Longitudinal View:** Demo data (John Doe) showing multi-visit trends. |
+
+---
+### 2. Smart Assessment & Atomic Cloud Sync
+This section demonstrates the core "invisible" automation. As the clinician enters vitals and prescriptions, the backend logic performs real-time calculations and updates the cloud database simultaneously.
+
+| Real-Time Database Synchronization |
+| :---: |
+| <img src="./patient-diagnosis-medicine-calculation-ezgif.com-speed.gif" width="700"> |
+| **Split-Screen Demo:** Watch the Firebase Console (Right) update medicine quantities (e.g., *Amycordial*) the moment the assessment form (Left) is processed. |
+
+---
+
+### 3. Administrative & Supply Chain Logic
 The administrative side handles the "Economics" of humanitarian aid, providing visibility into medicine stock and automating logistics for mobile ambulance crews.
 
 | Smart Inventory Management | Admin Navigation & Control |
