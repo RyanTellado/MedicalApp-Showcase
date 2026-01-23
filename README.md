@@ -7,7 +7,7 @@
 ![Role](https://img.shields.io/badge/Role-Project%20Lead-green)&nbsp;&nbsp;&nbsp;
 ![Status](https://img.shields.io/badge/Status-Field%20Deployed-success)
 
-📌 Project Overview
+## Project Overview
 
 This platform is a MyChart-style mobile app and backend system built for humanitarian healthcare organizations operating mobile clinics in India and South Sudan (including Parivaar, Samaritain Help Mission, and SuDRO Sudan).
 
@@ -30,7 +30,7 @@ This project proves I can build a system that ran in real clinics with non-techn
 
 ---
 
-## 📱 Interactive Product Showcase
+## Interactive Product Showcase
 
 ### 1. Clinical History Retrieval & Visit Timeline  
 The system retrieves a patient’s longitudinal record via a unique Aadhaar ID (SSN). Clinicians can instantly view prior visits and trends (e.g., weight, blood pressure, blood sugar, past prescription), supporting continuity of care across rotating mobile clinics.
@@ -42,8 +42,11 @@ The system retrieves a patient’s longitudinal record via a unique Aadhaar ID (
 
 ---
 
-### 2. Real-Time Medication Logic & Cloud Sync  
-This section demonstrates the core automation layer. As clinicians enter vitals and prescriptions, backend logic performs calculations and synchronizes updates to the cloud database.
+### 2. Real-Time Automation Logic & Cloud Sync
+
+This section demonstrates the core automation layer. As clinicians enter vitals and prescriptions, backend logic performs dosage calculations, updates medicine inventory, and synchronizes changes to the cloud database in real time.  
+
+The same automation layer also updates the active clinic assignment and logs staff activity as patients are seen.
 
 | Real-Time Database Synchronization |
 | :---: |
@@ -65,28 +68,35 @@ This layer handles the real-world operations of mobile healthcare delivery: inve
 
 ---
 
-## 🧪 Development Process: From Prototype to Field System  
+## Development Process: From Prototype to Field System  
 The first prototype failed in practice due to a mismatch between feature complexity and staff digital literacy. I spent months working directly with doctors, drivers, and administrators to observe real workflows, simplify interfaces, and move complexity into invisible backend automation. Features like clinic session activation, inventory deduction, and analytics export were added iteratively in response to operational breakdowns in the field. The system evolved through continuous testing, deployment, and redesign—driven by usability failures rather than abstract technical ambition.
 
----
+## Development Process: From Prototype to Field System
 
-## 🚀 Key Technical Innovations  
-- **Clinic Session Orchestration:** Daily activation workflow binds doctors, support staff, drivers, vehicles, and geographic clusters into a single persistent session. Patient visits automatically associate with this session for consistent attribution and auditability.  
-- **Automated Workflow Logic:** Java-based automation handles staff clock-ins and location assignments based on the first and last patient interactions of the day.  
-- **Smart Inventory Intelligence:** Stock levels for medicines (e.g., Cipro-500, Amoxipen) deduct in real time as treatments are recorded, triggering low-stock flags for administrators.  
-- **Offline-Tolerant Data Persistence:** Built on a NoSQL Firestore backend with workflows resilient to intermittent connectivity.  
-- **Administrative Analytics Export:** Custom transformation layer exports nested NoSQL structures into organized Google Sheets for high-level operational analysis.
+The first version of the app failed in practice because it was too complex for clinic staff to use reliably. I spent months working directly with doctors, drivers, and administrators to observe real workflows, simplify the interface, and move complexity into backend automation.
+
+Features like daily clinic activation, automatic inventory deduction, and analytics export were added iteratively in response to real breakdowns in the field. The system evolved through continuous testing, deployment, and redesign—driven by usability failures rather than abstract technical goals.
 
 ---
 
-## 🛠️ Technical Stack  
-- **Frontend:** Android Studio (Java)  
+## Key Technical Innovations
+
+- **Daily Clinic Session Automation:** Each clinic day is activated as a single session that binds doctors, attendants, drivers, vehicles, and villages together. All patient visits automatically attach to this session for consistent tracking and auditability.
+
+- **Activity-Based Time Tracking:** Staff are automatically clocked in with the first patient visit and clocked out with the last, eliminating manual attendance logs and enabling payroll automation.
+
+- **Real-Time Inventory Automation:** Medicine stock levels (e.g., Cipro-500, Amoxipen) deduct automatically as treatments are recorded, with low-stock alerts triggered for administrators.
+
+- **Offline-Resilient Sync:** Data is stored locally and synchronized to the cloud when connectivity becomes available, enabling reliable operation in low-signal environments.
+
+- **Operations Analytics Export:** Clinic and patient data is automatically transformed into structured Google Sheets for high-level operational analysis and reporting.
+
+---
+
+## Technical Stack
+
+- **Mobile App:** Android (Java), XML-based UI  
 - **Backend & Database:** Firebase Cloud Firestore  
-- **Deployments:** India (Parivaar, Samaritain Help Mission), South Sudan (SuDRO)
-
-<details>
-<summary><b>📖 Project Backstory (Condensed)</b></summary>
-
-When I first connected with a rural clinic network in India, most patient history lived in paper logs—hard to search, easy to lose, and impossible to aggregate across visits. My first version of this system technically worked but failed in practice due to digital literacy barriers. The project only became viable after sustained field iteration: simplifying UX, automating logistics invisibly, and redesigning workflows around how staff actually operated. What started as a technical experiment became a production system through testing, failure, and continuous adaptation.
-
-</details>
+- **Sync Model:** Offline-first with automatic cloud synchronization  
+- **Analytics Export:** Google Sheets integration  
+- **Deployment Regions:** India and South Sudan
