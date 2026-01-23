@@ -1,33 +1,43 @@
 # Mobile Clinic Operations Platform  
 ### Distributed Health Records + Logistics System for Field Clinics (India & South Sudan)
 
-![Impact](https://img.shields.io/badge/Impact-500k%2B%20Patients%20Served-blue)  
-![Role](https://img.shields.io/badge/Role-Project%20Lead-green)
 
-## 📌 Project Overview  
-This platform is the internal medical informatics and operations system for humanitarian healthcare organizations operating mobile clinics in India and South Sudan (including Parivaar, Samaritain Help Mission, and SuDRO Sudan). It replaces paper-based workflows (tally marks and handwritten logs) with a searchable, longitudinal medical record and an operational control layer for clinic logistics.
 
-Modeled after modern EHR systems—adapted for offline field environments—the system provides:
-- a **Clinician Portal** for visit documentation and historical context  
-- an **Admin Portal** for inventory, staffing, and multi-district coordination  
+![Impact](https://img.shields.io/badge/Impact-500k%2B%20Patients%20Served-blue)&nbsp;&nbsp;&nbsp;
+![Role](https://img.shields.io/badge/Role-Project%20Lead-green)&nbsp;&nbsp;&nbsp;
+![Status](https://img.shields.io/badge/Status-Field%20Deployed-success)
+
+📌 Project Overview
+
+This platform is a MyChart-style mobile app and backend system built for humanitarian healthcare organizations operating mobile clinics in India and South Sudan (including Parivaar, Samaritain Help Mission, and SuDRO Sudan).
+
+It replaces paper-based workflows (tally marks and handwritten logs) with a digital system that supports both patient care and clinic operations.
+
+At a high level, the platform consists of:
+- a **Clinician App** for visit documentation and longitudinal patient history  
+- an **Admin App** for inventory management, staff coordination, and multi-district operations  
+
+In practice, it functions like a lightweight EHR + logistics layer for field clinics, designed to work offline on low-cost Android devices and to be usable by non-technical staff.
+
+I designed and built both the Android application and the backend system, including automation for inventory updates, clinic logistics, and analytics export in google sheets
 
 **Impact:** 500,000+ patients served annually  
 **Active Clinics:** 50+ mobile clinics  
-**Geographic Reach:** 17 districts  
-**Design Constraints:** intermittent connectivity (“dead zones”), uneven digital literacy, low-cost Android devices  
+**Design Constraints:** intermittent connectivity, limited digital literacy, low-cost Android devices  
 
 This project proves I can build a system that ran in real clinics with non-technical users and scaled across districts with real operational consequences.
+
 
 ---
 
 ## 📱 Interactive Product Showcase
 
 ### 1. Clinical History Retrieval & Visit Timeline  
-The system retrieves a patient’s longitudinal record via a unique Aadhaar ID. Clinicians can instantly view prior visits and trends (e.g., weight, blood pressure, blood sugar), supporting continuity of care across rotating mobile clinics.
+The system retrieves a patient’s longitudinal record via a unique Aadhaar ID (SSN). Clinicians can instantly view prior visits and trends (e.g., weight, blood pressure, blood sugar, past prescription), supporting continuity of care across rotating mobile clinics.
 
 | Interactive ID Search & History Retrieval | Clinical Assessment Entry |
 | :---: | :---: |
-| <img src="./id-entering-patient-history-ezgif.com-optimize.gif" width="350"> | <img src="./visit-history-ui-2.png" width="350"> |
+| <img src="./id-entering-patient-history-ezgif.com-optimize.gif" width="320"> | <img src="./visit-history-ui-2.png" width="320"> |
 | **Fast Lookup:** Instant query over a NoSQL longitudinal record. | **Visit Timeline:** Demo patient (John Doe) showing historical trends. |
 
 ---
@@ -42,13 +52,15 @@ This section demonstrates the core automation layer. As clinicians enter vitals 
 
 ---
 
-### 3. Administrative & Supply Chain Visibility  
-The administrative layer models the logistics and economics of mobile healthcare delivery: inventory visibility, clinic activation, and district-wide coordination for daily deployments.
+### 3. Clinic Operations & Staff Automation
+
+This layer handles the real-world operations of mobile healthcare delivery: inventory management, daily clinic activation, staff coordination, and payroll-relevant activity tracking. It replaces manual staff logs and paper inventory sheets with automation that assigns clinic teams, tracks usage, and synchronizes operational data across districts.
 
 | Smart Inventory Management | Daily Clinic Activation & Staff Assignment |
 | :---: | :---: |
-| <img src="./medicine-inventory-ui.png" height="650"> | <img src="./daily-activation-staff-assignment-ezgif.com-video-to-gif-converter.gif" height="650"> |
-| **Inventory Tracking:** Real-time stock levels for critical medicines (e.g., Cipro-500, Amoxipen) with automatic deductions as treatments are recorded. | **Operational Orchestration:** Doctors, medical attendants, drivers, vehicle mileage, and village clusters are persisted into a single “clinic session” that becomes the default context for all patient visits that day. |
+| <img src="./medicine-inventory-ui.png" height="540"> | <img src="./daily-activation-staff-assignment-ezgif.com-video-to-gif-converter.gif" height="540"> |
+| **Inventory Tracking:** Real-time stock levels for critical medicines (e.g., Cipro-500, Amoxipen) with automatic deductions as treatments are recorded. Administrators can also manually restock inventory by logging new shipments directly into the system. | **Staff Orchestration:** Doctors, attendants, drivers, and vehicles are **automatically assigned** to a mobile clinic at the start of the day and bundled into a single **clinic session**. All patient visits and vehicle activity are **logged against this session** for daily coordination and accountability.
+
 
 
 ---
